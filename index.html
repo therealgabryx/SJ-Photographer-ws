@@ -8,25 +8,32 @@
     <meta name="robots" content="index,follow">
     <link rel="icon" href=""> <!-- missing icon ! -->
     <link rel="stylesheet" type="text/css" href="/styles/styles.css">
-    <title>Elena Joy | Photographer</title>
-</head>
+    <script defer src="/js/app.js"></script>
+    <title>Sophie Joy | Photographer</title>
+</head> 
 
 <body>
     <header class="main-head">
         <nav>
-            <h1 id="logo">Elena Joy</h1>
+            <h1 id="logo"><a href="#">Sophie Joy</a></h1>
+            <!-- <input type="checkbox" class="menu-check"> -->
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            </ul> 
+            <div class="burger">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span> 
+            </div>
+        </nav> 
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="#">
             <div class="hero-introduction flex">
-                <h2>Elena Joy <br /> Photography</h2>
+                <h2><span>Sophie Joy</span> <br /> Photography</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat, culpa odio
                     dolor quis molestias, illum ab soluta dolorum quibusdam
@@ -34,14 +41,76 @@
                 <a href="#gallery">Gallery</a> 
             </div>
             <div class="hero-images"> 
-                <img class="hero-subject" src="/assets/imgs/elena-joy.png" alt="picture of elena joy">
+                <img class="hero-subject" src="/assets/imgs/sophie-joy.png" alt="picture of sophie joy">
                 <img src="/assets/imgs/plant1.png" alt="" class="plant1 plant">
                 <img src="/assets/imgs/plant2.png" alt="" class="plant2 plant">
             </div>
         </section> 
 
+        <section class="about" id="about">
+            <div class="about-image">
+                <h5>MINIMAL</h5>
+                <img src="/assets/imgs/about-image.png" alt="portrait-picture">
+            </div>
+            <div class="about-text flex">
+                <h2>Sophie Joy</h2>
+                <div class="about-life">
+                    <h3>My Life</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, optio consectetur dolore debitis animi ipsam soluta. Iure, in? Numquam, saepe?</p>
+                </div> 
+                <div class="about-work">
+                    <h3>My Work</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, optio consectetur dolore debitis animi ipsam soluta. Iure, in? Numquam, saepe?</p>
+                </div> 
+                <div class="about-contact">
+                    <h3>Get in touch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, optio consectetur dolore debitis animi ipsam soluta. Iure, in? Numquam, saepe?</p>
+                </div> 
+            </div>
+        </section>
 
-    </main>
+        <section class="gallery" id="gallery">
+            <header class="gallery-head">
+                <h2>Quality Photography</h2> 
+                <p>Get in touch to get professional photographs made for you.</p>
+            </header>
+            <img src="/assets/imgs/gallery-1.jpg" class="gallery1" alt="">
+            <img src="/assets/imgs/gallery-2.jpg" class="gallery2" alt="">
+            <img src="/assets/imgs/gallery-3.jpg" class="gallery3" alt="">
+            <img src="/assets/imgs/gallery-4.jpg" class="gallery4" alt="">
+        </section> 
 
+        <section class="contact" id="contact">
+            <div class="form-wrapper flex">
+                <h2>
+                    Get in <br>
+                    <span>touch.</span>
+                </h2>
+                <form action="https://formspree.io/mpzyvjqg" method="POST">
+                    <label for="email">Your Email:</label>
+                    <input type="email" required name="_replyto">
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" cols="30" rows="3"></textarea>
+                    <button type="submit" value="Send">Submit</button>
+                </form>
+            </div>
+            <img  src="/assets/imgs/contact-image.jpg" alt="">
+        </section>
+
+        <footer>
+            <h4><span>Sophie Joy</span><span>&copy; 2020</span></h4>
+            <ul>
+                <li>
+                    <a href="http://ig.gabryx.com/"><img src="/assets/icons/instagram.svg" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="http://github.gabryx.com/"><img src="/assets/icons/github.svg" alt="github-repo"></a>
+                </li>
+                <li>
+                    <a href="http://tweet.gabryx.com/"><img src="/assets/icons/twitter.svg" alt="twitter"></a>
+                </li>
+            </ul>
+        </footer> 
+    </main> 
 </body> 
 </html> 
