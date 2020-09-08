@@ -383,7 +383,6 @@ footer {
     color: white;
     padding: 3rem 5%;
     flex-wrap: wrap;
-    color: var(--gray-accent-color);
 } 
 
 footer ul {

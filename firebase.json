@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "sophie-joy-photo",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
